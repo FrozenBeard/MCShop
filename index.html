@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>MCShop</title>
+    <title>PirateCraft Player Shops</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="gamealitionicon.ico"> 
+    <link rel="icon" href="favicon.ico"> 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
@@ -17,23 +17,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-87228987-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
 </head>
 
 <body>
     <header>
-        <nav class="red">
-            <div class="nav-wrapper white-text container">
-                <a href="index.html" class="brand-logo"><img src="logo.png" alt="MCShop Logo" height="60px" width="auto"></a>
+        <nav class="indigo darken-1">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo"><img src="logo.png" alt="PirateCraft player shops" height="60px" width="auto"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Shops Home</a></li>
+                    <li><a href="https://www.piratemc.com">PirateCraft Homepage</a></li>
+                    <li><a href="https://map.piratemc.com/?worldname=PirateCraft_1&mapname=surface&zoom=5&x=-1908&y=64&z=567">Market Map</a></li>
+                    <li><a href="https://piratemc.com/guides/shops-experience-storage/">How to make a shop</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html">Shops Home</a></li>
+                    <li><a href="https://www.piratemc.com">PirateCraft Homepage</a></li>
+                    <li><a href="https://map.piratemc.com/?worldname=PirateCraft_1&mapname=surface&zoom=5&x=-1908&y=64&z=567">Market Map</a></li>
+                    <li><a href="https://piratemc.com/guides/shops-experience-storage/">How to make a shop</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -60,75 +63,84 @@
             <p id="2"></p>
             <p>Number of SignShops in database: <strong id="shop-number"></strong></p>
         </div>
+
         <div class="container">
-            <h5>Featured Items:</h5>
-            <div id="featured-container" class="row">
-                <div class="col l3 m3 s6">
-                    <div class="card">
-                        <div class="card-image"><img src="img/264-0.png" class="card-image-size"><span class="card-title black-text right-align">Diamond</span></div>
-                        <div class="card-content">
-                            <p><strong>Owner:</strong></p><img src="https://minotar.net/avatar/Vasha/20" class="left">
-                            <p>Vasha</p>
-                            <p><strong>Enchantments:</strong></p>
-                            <p>none</p>
-                            <p><strong>Location:</strong></p>
-                            <p><i>world</i> @ <a href="http://survival.gamealition.com:8123/?worldname=world&amp;mapname=surface&amp;zoom=6&amp;x=-1472&amp;y=77&amp;z=-202" target="_blank">-1472, 77, -202</a></p>
-                        </div>
-                        <div class="card-action"><strong>buy</strong> 1 for <strong>G15</strong></div>
+            <h5>Featured Shops:</h5>
+            
+            <div class="row">
+                <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/featured-shops/market-placeholder.png">
+                      <span class="card-title">/warp shop</span>
                     </div>
+                    <div class="card-content">
+                      <p>Visit the server markets to rent a shop plot.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://map.piratemc.com/?worldname=PirateCraft_1&mapname=surface&zoom=5&x=-1908&y=64&z=567">View on map</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col l3 m3 s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/388-0.png" class="card-image-size">
-                            <span class="card-title black-text right-align">Emerald</span>
-                        </div>
-                        <div class="card-content">
-                            <p><strong>Owner:</strong></p><img src="https://minotar.net/avatar/StitchHasAGlitch/20" class="left">
-                            <p>StitchHasAGlitch</p>
-                            <p><strong>Enchantments:</strong></p>
-                            <p>none</p>
-                            <p><strong>Location:</strong></p>
-                            <p><i>world</i> @ <a href="http://survival.gamealition.com:8123/?worldname=world&amp;mapname=surface&amp;zoom=6&amp;x=-1580&amp;y=67&amp;z=-255" target="_blank">-1580, 67, -255</a></p>
-                            <!--<p><strong>In Stock?: </strong><span class="green-text">True</span></p>-->
 
-                        </div>
-                        <div class="card-action">
-                            <strong>buy</strong> 1 for <strong>G3.98</strong>
-                        </div>
+            <div class="row">
+                <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/featured-shops/market-placeholder.png">
+                      <span class="card-title">/warp shop</span>
                     </div>
+                    <div class="card-content">
+                      <p>Visit the server markets to rent a shop plot.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://map.piratemc.com/?worldname=PirateCraft_1&mapname=surface&zoom=5&x=-1908&y=64&z=567">View on map</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col l3 m3 s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/322-1.png" class="card-image-size">
-                            <span class="card-title black-text right-align">Your Shop Here</span>
-                        </div>
-                        <div class="card-content">
-                            <p>For only G200/month,</p>
-                            <p>You can add your</p>
-                            <p>shop right here!</p>
-                            <p>To purchase, contact:</p>
-                            <img src="https://minotar.net/avatar/StitchHasAGlitch/20" class="left">
-                            <p>StitchHasAGlitch</p>
-                            <p>Contact via IRC</p>
 
-                        </div>
-                        <div class="card-action">
-                            <strong>BUY</strong> TODAY!
-                        </div>
+            <div class="row">
+                <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/featured-shops/market-placeholder.png">
+                      <span class="card-title">/warp shop</span>
                     </div>
+                    <div class="card-content">
+                      <p>Visit the server markets to rent a shop plot.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://map.piratemc.com/?worldname=PirateCraft_1&mapname=surface&zoom=5&x=-1908&y=64&z=567">View on map</a>
+                    </div>
+                  </div>
                 </div>
+
+            </div>
     </main>
-    <footer>
-        <div class="container">
 
-            <p class="center">Current Version: 2.2.2 <small><a href="https://github.com/LakenH/MCShop/commits/gamealition">Changelog</a></small></p>
-            <p class="center">&copy; 2017 MCShop</p>
+    <footer class="page-footer indigo darken-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">PirateCraft Shops</h5>
+            <p class="grey-text text-lighten-4">This website lists all player made shops on PirateCraft.</p>
+            <p class="grey-text text-lighten-4">Anyone can create a shop, have a look at our <a href="https://piratemc.com/guides/shops-experience-storage/">shop guide</a> for detailed inforamtion.</p>
+            <p class="grey-text text-lighten-4">We have a dedicatd market located at <b>/warp shops</b> you can rent a shop!</p>
+          </div>
         </div>
-
+      </div>
+      <div class="footer-copyright indigo darken-3">
+        <div class="container">
+        &copy; 2012 - 2017 PirateCraft / Using a <a href="https://github.com/FrozenBeard/PCSS">Forked</a> version of <a href="https://github.com/LakenH/MCShop/commits/gamealition">MCShop</a> Please feel free to add features to our fork!
+        </div>
+      </div>
     </footer>
+
+
     <script src="mcshop.js"></script>
+    <script type="text/javascript">
+     $(".button-collapse").sideNav();
+    </script>
 </body>
 
 </html>

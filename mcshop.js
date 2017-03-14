@@ -1,8 +1,8 @@
 /*========================
 EDIT BELOW
 ========================*/
-var JSONUrl = "https://survival.gamealition.com/data/signshop.json";
-var dynmapURL = "http://survival.gamealition.com:8123";
+var JSONUrl = "signshop.json";
+var dynmapURL = "https://map.piratemc.com";
 /*========================
 EDIT ABOVE
 ========================*/
