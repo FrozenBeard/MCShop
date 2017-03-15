@@ -1,9 +1,17 @@
 ![PirateCraft](https://piratemc.com/wp-content/themes/piratemc/images/piratemc_piratemc_logo.png)
   
-Web site for viewing items for sale on PirateCraft Minecraft server, automatically updates once a day at 9am GMT from JSON data sent to this repo [PirateCraftData](https://github.com/FrozenBeard/PirateCraftData).
+Website for viewing items for sale on PirateCraft Minecraft server, automatically updates once a day at 9am GMT from JSON data sent to this repo [PirateCraftData](https://github.com/FrozenBeard/PirateCraftData).
+
+Minified JSON RAW data URL: https://raw.githubusercontent.com/FrozenBeard/PirateCraftData/master/signshop.min.json
+JSON RAW data URL: https://raw.githubusercontent.com/FrozenBeard/PirateCraftData/master/signshop.json
+
+Since the data is JSON you should be able to import into Excel or anything you want to create graphs! Make sure to share them on the [Forums](https://piratemc.com/forums)
 
 ## Working Shop URL
 [Sign Shop for PiratCraft](http://signshop.piratemc.com)
+
+## wait this repo IS the website?
+Hell yeah, all hosted using Github pages, make a pull request to this Repo and the website will be updated! Since its all JS and static content!
 
 ## Features
 - Automatically updates all shops located on the server every 30 minutes (Thanks to SignShopExport) we only push the data once a day.
