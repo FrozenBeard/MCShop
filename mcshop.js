@@ -1,7 +1,7 @@
 /*========================
 EDIT BELOW
 ========================*/
-var JSONUrl = "signshop.json";
+var JSONUrl = "https://raw.githubusercontent.com/FrozenBeard/PirateCraftData/master/signshop.min.json";
 var dynmapURL = "https://map.piratemc.com";
 /*========================
 EDIT ABOVE
