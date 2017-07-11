@@ -10,12 +10,10 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika|Source+Code+Pro|Source+Sans+Pro">
+    <link rel="stylesheet" href="css/icon-font.css">
 
 </head>
 
@@ -41,30 +39,23 @@
         </nav>
     </header>
     <main>
-
-
-
         <div class="container">
-            <div class="input-field">
-                <p>Please Choose an Item:</p>
-                <select name="itemselect" id="itemselect" class="form-control" onchange="findshops()">
-                    <option></option>
-                </select>
-                <script></script>
-            </div>
-        </div>
-        <div class="container">
-            <br/>
-            <div id="responsecontainer" class="row">
 
-
-            </div>
-            <p class="red-text" id="1"></p>
-            <p id="2"></p>
-            <p>Number of SignShops in database: <strong id="shop-number"></strong></p>
+        <div class="search-box box-shadow">
+          <img src="media/load.svg" id="loadingSpinner" class="spinner">
+          <p>Search for an item...</p>
+          <input type="text" id="itemSearchBox" disabled>
+          <p class="center"><strong>OR</strong></p>
+          <p>Search for a player...</p>
+          <input type="text" id="playerSearchBox" disabled>
         </div>
 
-        <div class="container">
+        <p class="results-label" id="resultsLabel">Results for <span id="query" class="mono"></span>:</p>
+        
+        <div class="results" id="results">
+
+        </div>
+
             <h5>Featured Shops:</h5>
             
             <div class="row">
@@ -131,16 +122,13 @@
       </div>
       <div class="footer-copyright indigo darken-3">
         <div class="container">
-        &copy; 2012 - 2017 PirateCraft / Using a <a href="https://github.com/FrozenBeard/PCSS">Forked</a> version of <a href="https://github.com/LakenH/MCShop/commits/gamealition">MCShop</a> Please feel free to add features to our fork!
+        &copy; 2012 - 2017 PirateCraft / Using a <a href="https://github.com/FrozenBeard/PCSS">Forked</a> version of <a href="https://gitlab.com/laken/mcshopdex">MCShopdex</a> Please feel free to add features to our fork!
         </div>
       </div>
     </footer>
 
-
-    <script src="mcshop.js"></script>
-    <script type="text/javascript">
-     $(".button-collapse").sideNav();
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/shopdex.js"></script>
 </body>
 
 </html>

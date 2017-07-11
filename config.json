@@ -1,0 +1,8 @@
+{
+	"shopdexName": "PirateCraft Shops", 
+	"serverIP": "mc.piratemc.com",
+	"currencySymbol": "£",
+	"shopData": "https://raw.githubusercontent.com/FrozenBeard/PirateCraftData/master/signshop.min.json",
+	"dynmapURL": "https://map.piratemc.com",
+	"itemAPI": "items.json"
+}
